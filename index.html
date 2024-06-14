@@ -7,13 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100 text-gray-900">
+<body class="bg-gray-100 text-gray-900 flex flex-col min-h-screen">
     <header class="text-center py-10 bg-gradient-to-r from-green-400 to-blue-500 text-white">
         <h1 class="text-5xl font-bold">The Ultimate AI Hub</h1>
         <p class="mt-4 text-xl">Explore our collection of fun AI-powered tools!</p>
     </header>
-    <main class="container mx-auto py-12">
-        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+    <main class="container mx-auto py-12 flex-grow">
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-center">
             <div class="tool-card">
                 <a href="ai-art-generator.html" class="block p-6 bg-white rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl">
                     <img src="images/ai-art.png" alt="AI Art Generator" class="w-24 mx-auto mb-4">
@@ -36,4 +36,3 @@
     </footer>
 </body>
 </html>
-
