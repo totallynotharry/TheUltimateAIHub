@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Art Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="text-center py-10 bg-gradient-to-r from-green-400 to-blue-500 text-white">
+        <h1 class="text-5xl font-bold">AI Art Generator</h1>
+        <p class="mt-4 text-xl">Create unique artwork using AI.</p>
+    </header>
+    <main class="container mx-auto py-12">
+        <section class="flex flex-col items-center space-y-8">
+            <div class="w-full max-w-xl bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="p-6">
+                    <form class="space-y-4" id="artForm">
+                        <div>
+                            <label for="inputText" class="block text-lg font-medium text-gray-700">Input Text or Upload Image:</label>
+                            <input type="text" id="inputText" name="inputText" placeholder="Enter text or upload an image URL" class="w-full mt-1 px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full py-3 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition duration-300">Generate Artwork</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="w-full bg-gray-200 overflow-hidden relative">
+                    <img id="generatedArtwork" src="images/placeholder-image.png" alt="Generated Artwork" class="w-full transition-transform duration-300 ease-in-out transform hover:scale-105">
+                    <div class="overlay absolute inset-0 bg-gradient-to-br from-pink-400 to-purple-600 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center py-6 bg-gradient-to-r from-green-400 to-blue-500 text-white">
+        <p>&copy; 2024 The Ultimate AI Hub. All rights reserved.</p>
+    </footer>
+
+    <!-- Placeholder for AI model integration -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
